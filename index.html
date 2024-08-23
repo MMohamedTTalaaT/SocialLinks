@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Social links profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Social links profile">
+  <style>
+    body {
+      background-color: hsl(0, 0%, 8%);
+      font-size: 14px;
+      font-family: "inter" , arial;
+    }
+
+    .box {
+      background-color:  hsl(0, 0%, 12%);
+      width: 350px;
+      border-radius: 10px;
+      height: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+    }
+
+    .box img {
+      border-radius: 50%;
+      width: 100px;
+      position: relative;
+      margin-top: 20px;
+      left: 50%;
+      translate: -50%;
+    }
+
+    .box img+p {
+      color: hsl(0, 0%, 100%);
+      position: relative;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    
+    .box img+p+p {
+      color: hsl(75, 94%, 57%);
+      text-align: center;
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .box img+p+p+p{
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    .box .links a {
+      color: hsl(0,0%, 100%);
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 10px;
+      width: 265px;
+      margin: 15px auto;
+      text-align: center;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+
+    .box .links a:hover {
+      cursor: pointer;
+      background-color: hsl(75, 94%, 57%);
+      color:hsl(0, 0%, 8%);
+    }
+
+    @media (max-width: 500px) {
+      .box {
+        height: 620px;
+      }
+
+      .box .links a {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="avatar-jessica.jpeg">
+    <p>Jessica Randall</p>
+    <p>London, United Kingdom</p>
+    <p>"Front-end developer and avid reader."</p>
+    <div class="links">
+      <a >GitHub</a>
+      <a >Frontend Mentor</a>
+      <a >LinkedIn</a>
+      <a >Twitter</a>
+      <a >Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
